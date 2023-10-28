@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Isuue {
+model Issue {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
   title       String   @db.String
   description String   @db.String
